@@ -1,0 +1,19 @@
+{
+  "name": "curso-ecmascript-6",
+  "version": "1.0.0",
+  "description": "Curso de ECMAScript 6+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resparzasoto/curso-ecmascript-6.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resparzasoto/curso-ecmascript-6/issues"
+  },
+  "homepage": "https://github.com/resparzasoto/curso-ecmascript-6#readme"
+}
