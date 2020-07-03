@@ -65,3 +65,64 @@ console.log(globalLet); //Not defined
 const a = 'b';
 a = 'a'; // Assignment to constant variable
 console.log(a);
+
+let name = 'rubén';
+let age = 25;
+
+// ES5
+obj = {
+    name: name,
+    age: age
+};
+console.log(obj);
+
+// ES6 Parameters in objects
+obj2 = {
+    name,
+    age
+};
+console.log(obj2);
+
+const names = [
+    {
+        name: 'Ruben',
+        age: 25
+    },
+    {
+        name: 'Alberto',
+        age: 24
+    }
+];
+
+let listOfNames = names.map(function (item) {
+    console.log(item.name);
+});
+
+// ES6 Arrow functions
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name, age) => {
+    console.log(name, age);
+}
+
+const listOfNames4 = name => {
+    console.log(name);
+}
+
+const square = num => num * num;
+
+// ES6 Promises
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true) {
+            resolve('Hey!');
+        } else {
+            reject('Ups!');
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hi'))
+    .catch(error => console.log(error))
