@@ -30,3 +30,35 @@ console.log('food'.padEnd(12, '  -------'));
 const obj = {
     name: 'Oscar',
 };
+
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        if (false) {
+            setTimeout(() => {
+                resolve('Hello world!');
+            }, 3000);
+        } else {
+            reject(new Error('Test error'));
+        }
+    });
+};
+
+// ES8 Async Await
+const helloAsync = async () => {
+    const hello = await helloWorld();
+    console.log(hello);
+};
+
+helloAsync();
+
+// ES8 Async Await, manera correcta de utilizarlas
+const anotherFunction = async () => {
+    try {
+        const hello = await helloWorld();
+        console.log(hello);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+anotherFunction();
